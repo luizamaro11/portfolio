@@ -1,4 +1,3 @@
-import './components/Navbar.tsx'
 import './assets/styles/global.css'
 import { Navbar } from "./components/Navbar.tsx";
 import { Header } from "./sections/Header.tsx";
@@ -8,19 +7,21 @@ import {Skills} from "./sections/Skills.tsx";
 function App() {
   return (
     <>
-      <div className='bg-[#F2F2F2]'>
+      <header className='bg-[#F2F2F2]'>
         <Navbar/>
-
         <Header/>
-      </div>
+      </header>
 
-      <div className='bg-linear-to-b from-[#0D1721] to-[#21374B]'>
-        <About />
-      </div>
+      <main>
+        <section className='bg-gradient-to-b from-[#0D1721] to-[#21374B]'>
+          <About/>
+        </section>
 
-      <div className='bg-[#F2F2F2]'>
-        <Skills />
-      </div>
+        <section className='bg-[#F2F2F2]'>
+          <Skills/>
+        </section>
+      </main>
+
     </>
   );
 }
