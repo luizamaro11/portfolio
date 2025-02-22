@@ -6,7 +6,9 @@ export function Header () {
     <>
       <header className='flex flex-col items-center gap-4 mt-12 mb-12 ml-24 mr-24 text-center'>
         <h1 className='font-[Inter] text-4xl font-bold italic'>Desenvolvedor Full Stack</h1>
-        <p className='font-[Inter] w-sm text-center'>Desenvolvedor web full stack com foco em soluções que impulsionam o negócio.</p>
+        <p className='font-[Inter] w-sm text-center'>
+          Desenvolvedor Full Stack com foco em soluções que impulsionam o negócio.
+        </p>
         <img src={Avatar}
              className="w-50"
              alt="Avatar Luiz Henrique - Desenvolvedor Web"/>
