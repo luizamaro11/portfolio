@@ -5,7 +5,7 @@ interface CardSkillsProps {
   description: string;
   skills: string[];
 }
-export function CardSkills({title, description, skills}: CardSkillsProps) {
+export function CardSkill({title, description, skills}: CardSkillsProps) {
   function formatStringSkills(skills: string[]) {
     const skillFormat:string = skills.join(', ')
     return skillFormat
