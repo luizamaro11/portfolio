@@ -9,7 +9,7 @@ export function Header () {
         Desenvolvedor Full Stack com foco em soluções que impulsionam o negócio.
       </p>
       <img src={Avatar}
-           className="w-50"
+           className="w-50 mt-4 mb-12"
            alt="Avatar Luiz Henrique - Desenvolvedor Web"/>
 
       <img src={Tecnologies} alt="tecnologias"/>

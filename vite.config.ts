@@ -8,4 +8,10 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    proxy: {
+      // the origin you will be accessing via browser
+      '/portfolio/server': 'http://localhost:8080',
+    },
+  },
 })

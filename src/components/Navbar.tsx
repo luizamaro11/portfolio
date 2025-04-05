@@ -11,11 +11,11 @@ export function Navbar() {
                     <span>Luiz Henrique</span>
                 </div>
                 <ul className='flex gap-4 cursor-pointer'>
-                    <li className='hover:text-[#21374B]'>Home</li>
-                    <li className='hover:text-[#21374B]'>Sobre</li>
-                    <li className='hover:text-[#21374B]'>Habilidades</li>
-                    <li className='hover:text-[#21374B]'>Projetos</li>
-                    <li className='hover:text-[#21374B]'>Contato</li>
+                    <a href="#header"><li className='hover:text-[#21374B]'>Home</li></a>
+                    <a href="#about"><li className='hover:text-[#21374B]'>Sobre</li></a>
+                    <a href="#skills"><li className='hover:text-[#21374B]'>Habilidades</li></a>
+                    <a href="#projects"><li className='hover:text-[#21374B]'>Projetos</li></a>
+                    <a href="#contacts"><li className='hover:text-[#21374B]'>Contato</li></a>
                 </ul>
             </nav>
         </div>
