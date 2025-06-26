@@ -12,7 +12,7 @@ export function CardProject({ title, description, link, image }: CardProjectProp
 
   return (
     <div
-      className='relative w-90 h-64 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 cursor-pointer'
+      className='relative w-full lg:w-90 h-64 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 cursor-pointer'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -20,7 +20,7 @@ export function CardProject({ title, description, link, image }: CardProjectProp
         className={`absolute inset-0 flex flex-col justify-center items-center text-white p-4 transition-all duration-300 ${
           isHovered ? "bg-[#21374B]" : "bg-cover bg-center"
         }`}
-        style={!isHovered ? { background: `linear-gradient(rgba(13, 23, 33, 0.7), rgba(13, 23, 33, 0.7)), url(${image})` } : {}}
+        style={!isHovered ? { background: `linear-gradient(rgba(13, 23, 33, 0.7), rgba(13, 23, 33, 0.7)), url(${image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" } : {}}
       >
         <h3
           className={`font-[Inter] text-[#F2F2F2] font-bold w-[65%] ${isHovered ? 'text-xl' : 'text-4xl'}`}

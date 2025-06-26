@@ -8,10 +8,10 @@ import freelancerHours from "../assets/images/cover-freelancer-hours.png";
 
 export function Projects() {
   return (
-    <div className='flex flex-col items-center gap-10 pt-12 pb-12 ml-24 mr-24 text-center'>
+    <div className='flex flex-col items-center gap-10 pt-12 pb-12 px-8 md:px-16 lg:ml-24 lg:mr-24 text-center'>
       <h2 className='font-[Inter] font-bold text-[#0D1721] text-3xl'>Principais Projetos</h2>
 
-      <div className='flex flex-wrap justify-center gap-4'>
+      <div className='flex flex-wrap justify-center gap-4 w-full'>
         <CardProject
           title='Fylo landing page'
           description='Solução do desafio Fylo no Frontend Mentor: desenvolvimento de uma landing page moderna e responsiva.'

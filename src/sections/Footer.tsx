@@ -6,10 +6,10 @@ import Whatsapp from "../assets/icons/whatsapp-brands-solid.svg";
 
 export function Footer() {
   return (
-    <div className='flex flex-row justify-between gap-4 pt-8 pb-8 pl-24 pr-24 text-white'>
-      <p>© Luiz Henrique Amaro | Todos os direitos reservados</p>
+    <div className='flex flex-col sm:flex-row justify-between gap-4 pt-8 pb-8 px-4 sm:pl-16 sm:pr-16 lg:pl-24 lg:pr-24 text-white'>
+      <p className="text-center sm:text-start">© Luiz Henrique Amaro | Todos os direitos reservados</p>
 
-      <div className='flex flex-row gap-12'>
+      <div className='flex flex-row justify-between gap-12'>
         <a href="https://www.facebook.com/profile.php?id=100003702517102" target='_blank'><img src={Facebook} alt="facebook"/></a>
         <a href="https://instagram.com/luizh.amaro" target='_blank'><img src={Instagram} alt="instagram"/></a>
         <a href="https://linkedin.com/in/luizhamaro" target='_blank'><img src={Linkedin} alt="linkedin"/></a>

@@ -2,8 +2,8 @@ import { CardSkill } from "../components/CardSkill.tsx";
 
 export function Skills() {
   return (
-    <div className='flex items-center pl-24 pr-24 text-center z-2 relative -top-20'>
-      <h2 className='hidden'>Habilidades</h2>
+    <div className='flex flex-col lg:flex-row items-center gap-4 p-8 md:p-16 lg:pl-24 lg:pr-24 text-center z-2 lg:relative lg:-top-20'>
+      <h2 className='font-[Inter] font-bold text-[#0D1721] text-xl md:text-2xl lg:hidden'>Habilidades</h2>
 
       <CardSkill
         itemKey={1}

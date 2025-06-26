@@ -33,34 +33,34 @@ export function Form() {
   return (
     <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
       <input
-        className='bg-white rounded-lg shadow p-2'
+        className='bg-white rounded-lg shadow p-3'
         type="text"
         placeholder="Nome"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <input
-        className='bg-white rounded-lg shadow p-2'
+        className='bg-white rounded-lg shadow p-3'
         type="number"
         placeholder="Telefone"
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
       />
       <input
-        className='bg-white rounded-lg shadow p-2'
+        className='bg-white rounded-lg shadow p-3'
         type="email"
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
       <textarea
-        className='bg-white rounded-lg shadow p-2'
+        className='bg-white rounded-lg shadow p-3'
         placeholder="Mensagem"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
       <button
-        className='bg-[#21374B] text-white rounded-lg shadow p-2 hover:bg-[#0d1721]'
+        className='bg-[#21374B] text-white rounded-lg shadow p-3 hover:bg-[#0d1721]'
         type="submit"
       >
         ENVIAR MENSAGEM

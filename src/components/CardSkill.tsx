@@ -13,15 +13,15 @@ export function CardSkill({ itemKey, title, description, skills }: CardSkillsPro
   }
 
   const stylesMap: { [key: number]: string } = {
-    1: 'rounded-tl-xl rounded-bl-xl border-r-1 border-gray-200',
-    2: 'rounded-none border-r-1 border-gray-200',
-    3: 'rounded-tr-xl rounded-br-xl rounded-bl-none'
+    1: 'rounded-xl lg:rounded-tl-xl lg:rounded-bl-xl border-r-1 border-gray-200',
+    2: 'rounded-xl lg:rounded-none border-r-1 border-gray-200',
+    3: 'rounded-xl lg:rounded-tr-xl lg:rounded-br-xl lg:rounded-bl-none'
   };
 
   const styles: string = stylesMap[itemKey] || '';
 
   return (
-    <div className={`bg-white p-10 flex flex-col gap-4 items-center w-100 h-96 ${styles}`}>
+    <div className={`bg-white p-10 flex flex-col gap-4 items-center w-full lg:w-100 lg:h-120 xl:h-96 ${styles}`}>
       <img className='w-20' src={ CircleCode } alt="Icone Código em Circulo"/>
 
       <h3 className='text-[#0D1721] font-bold text-xl'>{ title }</h3>

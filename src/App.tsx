@@ -16,7 +16,7 @@ function App() {
       </header>
 
       <main>
-        <section className='bg-gradient-to-b from-[#0D1721] to-[#21374B]' id={'about'}>
+        <section className='bg-gradient-to-b from-[#0D1721] to-[#21374B] w-full' id={'about'}>
           <About/>
         </section>
 
