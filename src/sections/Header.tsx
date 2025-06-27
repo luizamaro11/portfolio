@@ -10,9 +10,9 @@ export function Header () {
       </p>
       <img src={Avatar}
            className="w-50 mt-4 mb-12"
-           alt="Avatar Luiz Henrique - Desenvolvedor Web"/>
+           alt="Foto ilustrativa de Luiz Henrique, desenvolvedor web full stack"/>
 
-      <img src={Tecnologies} alt="tecnologias"/>
+      <img src={Tecnologies} alt="Logos das tecnologias utilizadas: HTML, CSS, JavaScript, PHP, Laravel, React, entre outras"/>
     </div>
   )
 }

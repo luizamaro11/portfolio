@@ -32,36 +32,56 @@ export function Form() {
 
   return (
     <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
+      <label htmlFor="name" className="sr-only">Nome</label>
       <input
+        id="name"
+        name="name"
         className='bg-white rounded-lg shadow p-3'
         type="text"
         placeholder="Nome"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        required
       />
+
+      <label htmlFor="phone" className="sr-only">Telefone</label>
       <input
+        id="phone"
+        name="phone"
         className='bg-white rounded-lg shadow p-3'
-        type="number"
+        type="tel"
         placeholder="Telefone"
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
+        required
       />
+
+      <label htmlFor="email" className="sr-only">Email</label>
       <input
+        id="email"
+        name="email"
         className='bg-white rounded-lg shadow p-3'
         type="email"
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        required
       />
+
+      <label htmlFor="message" className="sr-only">Mensagem</label>
       <textarea
+        id="message"
+        name="message"
         className='bg-white rounded-lg shadow p-3'
         placeholder="Mensagem"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
+        required
       />
       <button
         className='bg-[#21374B] text-white rounded-lg shadow p-3 hover:bg-[#0d1721]'
         type="submit"
+        aria-label="Enviar mensagem de contato"
       >
         ENVIAR MENSAGEM
       </button>
