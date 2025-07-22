@@ -1,9 +1,10 @@
 <?php
 
+namespace App;
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../config.php';
 
 class Email
@@ -26,12 +27,15 @@ class Email
             $this->mailer->setFrom(EMAIL_FROM, EMAIL_FROM_NAME);
 
         } catch (Exception $e) {
-            echo "Erro ao configurar o PHPMailer: {$e->getMessage()}";
+            // Melhor lançar uma exceção para lidar melhor com erros
+            throw new Exception("Erro ao configurar o PHPMailer: {$e->getMessage()}");
         }
     }
 
-    public function sendEmail($to, $subject, $message) {
+    public function sendEmail($to, $subject, $message)
+    {
         try {
+            $this->mailer->clearAddresses(); // limpa destinatários anteriores, caso
             $this->mailer->addAddress($to);
             $this->mailer->Subject = $subject;
             $this->mailer->Body = $message;

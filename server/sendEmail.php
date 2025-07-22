@@ -12,21 +12,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'] ?? '';
     $message = $_POST['message'] ?? '';
 
-    if (empty($name) && empty($phone) && empty($email) && empty($message)) {
-        echo json_encode(['success' => 'false', 'message' => 'preencha todos os campos.']);
+    if (empty($name) || empty($phone) || empty($email) || empty($message)) {
+        echo json_encode(['success' => false, 'message' => 'Preencha todos os campos.']);
         exit;
     }
 
     $subject = 'Novo formulário enviado';
-    $bodyMessage = "Nome: $name\nEmail: $email\nMensagem: $message";
+    $bodyMessage = "Nome: $name\nEmail: $email\nTelefone: $phone\nMensagem: $message";
 
     $emailSender = new Email();
-    $response = $emailSender->sendEmail('luiz.amaro90@gmail.com', $subject, $bodyMessage);
+    $response = $emailSender->sendEmail('luiz.amaro90@gmail.com', $subject, nl2br($bodyMessage));
 
-    if ($response === true) {
+    if ($response !== true) {
         echo json_encode([
             'success' => false,
-            'message' => 'Não foi póssivel fazer o envio do email'
+            'message' => 'Não foi possível fazer o envio do email: ' . $response
         ]);
         exit;
     }
