@@ -15,42 +15,42 @@ export function Projects() {
         <CardProject
           title='Fylo landing page'
           description='Solução do desafio Fylo no Frontend Mentor: desenvolvimento de uma landing page moderna e responsiva.'
-          link='#'
+          link='https://fylo.luizhamaro.com.br'
           image={fylo}
         />
 
         <CardProject
           title='ONM Landing Page'
           description='Landing page para O Novo Mercado: escola de marketing digital, promovendo formação de Gestor de Marketing Digital.'
-          link='#'
+          link='https://onm.luizhamaro.com.br'
           image={onm}
         />
 
         <CardProject
           title='Rest Countries API'
           description='Desafio Frontend Mentor: integração com API de países, exibição, filtro por nome e página de detalhes interativa.'
-          link='#'
+          link='https://countries.luizhamaro.com.br'
           image={restCountries}
         />
 
         <CardProject
           title='Gerenciador de Quiosque'
           description='Sistema para quiosques de praia: organiza comandas, vendas e mesas, facilitando o registro de pedidos e gestão.'
-          link='#'
+          link='https://quiosque.luizhamaro.com.br'
           image={quiosque}
         />
 
         <CardProject
           title='Imprimir Pedido'
           description='Impressão Automática: pedidos do WhatsApp são registrados e impressos automaticamente via Google Sheets e PHP.'
-          link='#'
+          link='https://autoprint.luizhamaro.com.br'
           image={imprimirPedido}
         />
 
         <CardProject
           title='Freelancer Hours'
           description='Plataforma em Laravel para freelancers enviarem propostas de horas em projetos.'
-          link='#'
+          link='https://freelancerhours.luizhamaro.com.br'
           image={freelancerHours}
         />
       </div>
